@@ -1,163 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Rochester&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 
-
-
-.bodyIndex {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: url(https://www.tapeciarnia.pl/fotki/d/20263_1574538308_7761.jpg);
-  background-position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top -70px;
-  background-size: cover;
-  padding: 0px;
+/* header */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+	background: #c7834f;
 }
 
-.bodyAbout {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: url(https://img4.goodfon.com/wallpaper/nbig/8/8d/sobaka-drug-ulitsa-1.jpg);
-  background-position: absolute;
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center bottom;
-  background-size: cover;
+.logo {
+	font-family: "Emilys Candy", cursive;
+	font-size: 3rem;
+	color: black;
+	letter-spacing: 2px;
+	padding: 15px;
 }
 
-.bodyDonate {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: url(https://www.wallpapertip.com/wmimgs/44-443804_lonely-sad-dog-in-the-rain-wallpaper-data.jpg);
-  background-position: absolute;
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center bottom;
-  background-size: cover;
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-list .nav-items {
+	padding: 2rem 1rem 2.1rem 1rem;
 }
 
-
-.web-name {
-  font-family: 'Emilys Candy', cursive;
-  font-size: 3rem;
-  color: black;
-  letter-spacing: 2px;
-  padding: 1rem 1rem 1rem 2rem;
+.nav-items .nav-link {
+	text-decoration: none;
+	color: black;
+	font-family: "Rochester", cursive;
+	font-weight: bolder;
+	font-size: 22px;
 }
 
-li {
-  display: inline;
-  margin: 1rem 3rem 0rem 0rem;
+.nav-items > .nav-link.active {
+	color: #000;
+	border-bottom: 2px solid black;
 }
 
-li a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Rochester', cursive;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
+.nav-list .nav-items:hover {
+	background-color: black;
 }
 
-li a:hover {
-  /* color: #573929;
-  background-color: black; */
-  /* margin: 0.25rem 0rem 0.25rem 0.25rem; */
+.nav-list .nav-items:hover .nav-link {
+	color: #c7834f;
 }
 
-li :hover {
-  color: #c7834f;
-  background-color: black;
-  padding: 2rem 1rem 2.1rem 1rem;
+/* body-containers */
+.body-container {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto";
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	padding: 0px;
+	position: relative;
 }
 
-ul {
-  list-style-type: none;
-  float: right;
+.home-quote {
+	position: absolute;
+	width: auto;
+	min-width: 60%;
+	color: white;
+	background-color: black;
+	opacity: 0.6;
+	padding: 1.5rem 3rem;
+	font-family: "Satisfy", cursive;
+	font-size: 2.2rem;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
 }
 
-nav {
-  background-color: #c7834f;
-  margin-top: 0px;
-  height: 6rem;
-  border-bottom-right-radius: 1rem
+.home-quote::after {
+	color: #ffb37a;
+	font-size: 1.3rem;
+	content: "- Orhan Pamuk";
+	position: absolute;
+	bottom: 0;
+	right: 10px;
 }
 
-h1 {
-  display: block;
-  float: left;
-  font-size: 2em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+.footer {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.65);
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+	width: 100%;
 }
 
 .about {
-  position: relative;
-  max-width: 350px;
-  background-color: white;
-  opacity: 0.6;
-  padding: 1rem 3rem 1rem 3rem;
-  left: 90px;
-  top: 5px;
-  font-family: 'Satisfy', cursive;
-  font-size: 2rem
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 1rem 3rem 1rem 3rem;
+	width: 380px;
+	padding: 1rem 3rem 1rem 3rem;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: "Satisfy", cursive;
+	font-size: 2rem;
 }
 
-.dog {
-  position: relative;
-  color: white;
-  max-width: 810px;
-  background-color: black;
-  opacity: 0.6;
-  padding: 1rem 3rem 1rem 3rem;
-  left: 180px;
-  top: 20px;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.8rem;
+.donate {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
 }
 
-.donatePara{
-  position: relative;
-  color: white;
-  background-color: black;
-  opacity: 0.6;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.5rem;
-  max-width: 1000px;
-  padding: 1rem 3rem 1rem 3rem;
-  left: 5.8rem;
-  text-align: center;
-  letter-spacing: 1.5px;
-  top: -12px
+.donatePara {
+	color: white;
+	background-color: black;
+	opacity: 0.6;
+	font-family: "Satisfy", cursive;
+	font-size: 2rem;
+	width: auto;
+	min-width: 1000px;
+	padding: 1rem 3rem 1rem 3rem;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+.donateBtn {
+	padding: 10px;
+	background-color: #c7834f;
+	color: #fafafa;
+	border: 0;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.donateBtn:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 35px -1px #000;
+}
+
+.donateBtn:focus {
+	outline: unset;
 }

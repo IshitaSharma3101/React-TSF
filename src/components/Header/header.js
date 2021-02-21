@@ -1,16 +1,32 @@
-const Header = () => {
-    return(
-        <div>
-            <h1 className="web-name">Wagging Tails</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                </ul>
-            </nav>
-        </div>
-    )
-}
+import { NavLink } from "react-router-dom";
 
-export default Header
+const Header = (props) => {
+	return (
+		<nav className='navbar'>
+			<h1 className='logo'>Wagging Tails</h1>
+			<ul className='nav-list'>
+				<li className='nav-items'>
+					<NavLink
+						className='nav-link'
+						activeClassName='active'
+						to='/'
+						exact={true}>
+						Home
+					</NavLink>
+				</li>
+				<li className='nav-items'>
+					<NavLink className='nav-link' activeClassName='active' to='/about'>
+						About
+					</NavLink>
+				</li>
+				<li className='nav-items'>
+					<NavLink className='nav-link' activeClassName='active' to='/donate'>
+						Donate
+					</NavLink>
+				</li>
+			</ul>
+		</nav>
+	);
+};
+
+export default Header;
