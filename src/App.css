@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+
+.bodyIndex {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(https://www.tapeciarnia.pl/fotki/d/20263_1574538308_7761.jpg);
+  background-position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top -70px;
+  background-size: cover;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodyAbout {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(https://img4.goodfon.com/wallpaper/nbig/8/8d/sobaka-drug-ulitsa-1.jpg);
+  background-position: absolute;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bodyDonate {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(https://www.wallpapertip.com/wmimgs/44-443804_lonely-sad-dog-in-the-rain-wallpaper-data.jpg);
+  background-position: absolute;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.web-name {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 3rem;
+  color: black;
+  letter-spacing: 2px;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+li {
+  display: inline;
+  margin: 1rem 3rem 0rem 0rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Rochester', cursive;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+li a:hover {
+  /* color: #573929;
+  background-color: black; */
+  /* margin: 0.25rem 0rem 0.25rem 0.25rem; */
+}
+
+li :hover {
+  color: #c7834f;
+  background-color: black;
+  padding: 2rem 1rem 2.1rem 1rem;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+}
+
+nav {
+  background-color: #c7834f;
+  margin-top: 0px;
+  height: 6rem;
+  border-bottom-right-radius: 1rem
+}
+
+h1 {
+  display: block;
+  float: left;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  max-width: 350px;
+  background-color: white;
+  opacity: 0.6;
+  padding: 1rem 3rem 1rem 3rem;
+  left: 90px;
+  top: 5px;
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem
+}
+
+.dog {
+  position: relative;
   color: white;
+  max-width: 810px;
+  background-color: black;
+  opacity: 0.6;
+  padding: 1rem 3rem 1rem 3rem;
+  left: 180px;
+  top: 20px;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.donatePara{
+  position: relative;
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  max-width: 1000px;
+  padding: 1rem 3rem 1rem 3rem;
+  left: 5.8rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  top: -12px
 }
