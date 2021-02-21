@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
 		<div className='footer'>
-			Made by{" "}
+			Made with {" "}
 			<span style={{ color: "#fe021f", margin: "0 5px" }}>&hearts;</span> by
 			Ishita
 		</div>

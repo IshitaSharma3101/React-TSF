@@ -10,7 +10,7 @@ const Donate = (props) => {
 				<span
 					style={{
 						color: "#ffb37a",
-						fontFamily: "'Philosopher', sans-serif ",
+						fontFamily: "'Philosopher', sans-serif ", fontSize: "20px"
 					}}>
 					Become a proud member of our rescue team by making a donation.
 				</span>
