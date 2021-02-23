@@ -1,6 +1,5 @@
 const Donate = (props) => {
 	return (
-		<body>
         <div className='donate'>
 			<h3 className='donatePara'>
 				It is with your charitable support that we bring a change in lives of
@@ -22,7 +21,6 @@ const Donate = (props) => {
 				<a href="https://rzp.io/l/OJPy4LvxA">Donate Now </a>
 			</button>
 		</div>
-		</body>
 	);
 };
 

@@ -1,6 +1,5 @@
 import { useEffect, useReducer, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import "./App.css";
 import Home from "./components/Home/home";
 import Header from "./components/Header/header";
@@ -14,35 +13,34 @@ const App = () => {
 		"https://img4.goodfon.com/wallpaper/nbig/8/8d/sobaka-drug-ulitsa-1.jpg";
 	const donateBg =
 		"https://www.wallpapertip.com/wmimgs/44-443804_lonely-sad-dog-in-the-rain-wallpaper-data.jpg";
-	const [path, setPath] = useState("");
-	const [bg, setBg] = useState("");
-	useEffect(() => {
-		setPath(window.location.pathname);
-		path === "/about"
-			? setBg(aboutBg)
-			: path === "/donate"
-			? setBg(donateBg)
-			: setBg(homeBg);
-	}, [path, bg]);
 	return (
 		<Router>
-			<div
-				className='body-container'
-				style={{ backgroundImage: `url('${bg}')` }}>
-				<Header />
+			<Header />
 				<Switch>
 					<Route path='/about' exact>
-						<About />
+					<div
+					className='body-container'
+					style={{ backgroundImage: `url('${aboutBg}')` }}>
+					<About />
+			        </div>
 					</Route>
 					<Route path='/donate' exact>
-						<Donate />
+					<div
+					className='body-container'
+					style={{ backgroundImage: `url('${donateBg}')` }}>
+					<Donate />
+			        </div>
 					</Route>
 					<Route path='/' exact>
-						<Home />
+					<div
+					className='body-container'
+					style={{ backgroundImage: `url('${homeBg}')` }}>
+					<Home />
+			        </div>
 					</Route>
 				</Switch>
 				<Footer />
-			</div>
+			
 		</Router>
 	);
 };
